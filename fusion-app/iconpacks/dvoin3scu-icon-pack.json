@@ -1,38 +1,38 @@
 [
   {
     "name": "AniList",
-    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/icons/anilist.png"
+    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/community/anilist.png"
   },
   {
     "name": "IMDB",
-    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/icons/imdb.png"
+    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/community/imdb.png"
   },
   {
     "name": "Letterboxd",
-    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/icons/letterboxd.png"
+    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/community/letterboxd.png"
   },
   {
     "name": "MDBList",
-    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/icons/mdblist.png"
+    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/community/mdblist.png"
   },
   {
     "name": "Metacritic",
-    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/icons/metacritic.png"
+    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/community/metacritic.png"
   },
   {
     "name": "Popcornmeter",
-    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/icons/popcorn.png"
+    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/community/popcorn.png"
   },
   {
     "name": "TMDB",
-    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/icons/tmdb.png"
+    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/community/tmdb.png"
   },
   {
     "name": "RottenTomatoes",
-    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/icons/rotten.png"
+    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/community/rotten.png"
   },
   {
     "name": "Trakt",
-    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/icons/trakt.png"
+    "url": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/community/trakt.png"
   }
 ]
