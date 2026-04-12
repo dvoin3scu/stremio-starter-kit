@@ -1,0 +1,492 @@
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "requiredAddons": [
+    "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json"
+  ],
+  "widgets": [
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+          "catalogId": "movie::trakt.list.33032833",
+          "type": "movie"
+        }
+      },
+      "id": "catalog.22FB25FB-656C-4A0E-BEC4-874D26D184BD",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Trending Kids Movies",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+          "catalogId": "Movie::trakt.list.33032593",
+          "type": "movie"
+        }
+      },
+      "id": "catalog.6D67D116-D91B-4E23-AC65-38FFE2203BFF",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Trending Movies",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+          "catalogId": "shows::trakt.list.33032820",
+          "type": "series"
+        }
+      },
+      "id": "catalog.F0A5A117-BF87-4E50-B371-E6F8F88596B4",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Trending Shows",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+          "catalogId": "anime::trakt.list.33032836",
+          "type": "series"
+        }
+      },
+      "id": "catalog.B6F67E06-1F0D-46D4-8D33-D338F5AAE9F4",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Trending Anime Movies",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+          "catalogId": "anime::trakt.list.33032835",
+          "type": "series"
+        }
+      },
+      "id": "catalog.BE6C026A-D00B-4340-A57A-C74178161429",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Trending Anime Shows",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Watchlist",
+          "listSlug": "__watchlist_all__",
+          "sortBy": "random",
+          "sortHow": "desc",
+          "traktId": -10,
+          "username": "__me__"
+        }
+      },
+      "id": "trakt.581737B3-3940-46BB-92FB-DB0CD773868A",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Watchlist",
+      "type": "row.classic"
+    },
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [350]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [350]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "ABF7B403-FC62-40E9-8C4F-CDED0A269162",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/appletv-square.jpg",
+              "title": "Apple TV+"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [283]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [283]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "1CC5A0D2-CCCC-439D-8ABF-7DD39E795642",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/crunchyroll-square.jpg",
+              "title": "Crunchyroll"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [337]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [337]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "0BD4352A-7302-4AD0-9B4D-A0916D79F04C",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/disneyplus-square.jpg",
+              "title": "Disney+"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "PT",
+                    "withWatchProviders": [63]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "PT",
+                    "withWatchProviders": [63]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "E09130CC-2C2C-4AC8-8F06-050BD020F8BC",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/filmin-square.png",
+              "title": "Filmin"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [1899]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [1899]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "FFC2AEEE-053C-4E41-BF14-F23E6F6E33D8",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/hbomax-square.jpg",
+              "title": "HBO Max"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [15]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [15]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "32B464E4-D6CB-4D71-A6FE-A21365562252",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/hulu-square.jpg",
+              "title": "Hulu"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [11]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [11]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "2B4BA2DC-04AA-43C2-9652-2FA9AFB01D0F",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/mubi-square.jpg",
+              "title": "Mubi"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [8]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [8]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "FFDD54E9-D7F7-4990-A9F9-3E81FE3ABD33",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/netflix-square.jpg",
+              "title": "Netflix"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [2616, 2303]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [2616, 2303]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "94205CBB-B514-462F-9942-7FCBF82CC736",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/paramount-square.jpg",
+              "title": "Paramount"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [9]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [9]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "459FF534-9E27-41CC-99C8-722A59BEC40A",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/primevideo-square.jpg",
+              "title": "Prime Video"
+            }
+          ]
+        }
+      },
+      "id": "collection.DF6EB88E-8FE6-4A64-89B0-93AB08310BEC",
+      "title": "Streaming Platforms",
+      "type": "collection.row"
+    }
+  ]
+}

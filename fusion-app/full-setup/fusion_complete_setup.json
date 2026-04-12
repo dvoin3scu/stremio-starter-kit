@@ -1,0 +1,2168 @@
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "requiredAddons": [
+    "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+    "https:\/\/meta.asgardr.sbs\/stremio\/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8\/manifest.json"
+  ],
+  "widgets": [
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+          "catalogId": "movie::trakt.list.33032833",
+          "type": "movie"
+        }
+      },
+      "id": "catalog.22FB25FB-656C-4A0E-BEC4-874D26D184BD",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Trending Kids Movies",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+          "catalogId": "Movie::trakt.list.33032593",
+          "type": "movie"
+        }
+      },
+      "id": "catalog.6D67D116-D91B-4E23-AC65-38FFE2203BFF",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Trending Movies",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+          "catalogId": "shows::trakt.list.33032820",
+          "type": "series"
+        }
+      },
+      "id": "catalog.F0A5A117-BF87-4E50-B371-E6F8F88596B4",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Trending Shows",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+          "catalogId": "anime::trakt.list.33032836",
+          "type": "series"
+        }
+      },
+      "id": "catalog.B6F67E06-1F0D-46D4-8D33-D338F5AAE9F4",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Trending Anime Movies",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/548c3e51-ba1f-4599-b331-2f2404a6ea4b\/manifest.json",
+          "catalogId": "anime::trakt.list.33032835",
+          "type": "series"
+        }
+      },
+      "id": "catalog.BE6C026A-D00B-4340-A57A-C74178161429",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Trending Anime Shows",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Watchlist",
+          "listSlug": "__watchlist_all__",
+          "sortBy": "random",
+          "sortHow": "desc",
+          "traktId": -10,
+          "username": "__me__"
+        }
+      },
+      "id": "trakt.581737B3-3940-46BB-92FB-DB0CD773868A",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Watchlist",
+      "type": "row.classic"
+    },
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [350]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [350]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "ABF7B403-FC62-40E9-8C4F-CDED0A269162",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/appletv-square.jpg",
+              "title": "Apple TV+"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [283]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [283]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "1CC5A0D2-CCCC-439D-8ABF-7DD39E795642",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/crunchyroll-square.jpg",
+              "title": "Crunchyroll"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [337]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [337]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "0BD4352A-7302-4AD0-9B4D-A0916D79F04C",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/disneyplus-square.jpg",
+              "title": "Disney+"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "PT",
+                    "withWatchProviders": [63]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "PT",
+                    "withWatchProviders": [63]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "E09130CC-2C2C-4AC8-8F06-050BD020F8BC",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/filmin-square.png",
+              "title": "Filmin"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [1899]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [1899]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "FFC2AEEE-053C-4E41-BF14-F23E6F6E33D8",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/hbomax-square.jpg",
+              "title": "HBO Max"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [15]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [15]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "32B464E4-D6CB-4D71-A6FE-A21365562252",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/hulu-square.jpg",
+              "title": "Hulu"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [11]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [11]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "2B4BA2DC-04AA-43C2-9652-2FA9AFB01D0F",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/mubi-square.jpg",
+              "title": "Mubi"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [8]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [8]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "FFDD54E9-D7F7-4990-A9F9-3E81FE3ABD33",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/netflix-square.jpg",
+              "title": "Netflix"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [2616, 2303]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [2616, 2303]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "94205CBB-B514-462F-9942-7FCBF82CC736",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/paramount-square.jpg",
+              "title": "Paramount"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "movie",
+                    "watchRegion": "US",
+                    "withWatchProviders": [9]
+                  }
+                },
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "limit": 200,
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "trending.day",
+                    "type": "tv",
+                    "watchRegion": "US",
+                    "withWatchProviders": [9]
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "459FF534-9E27-41CC-99C8-722A59BEC40A",
+              "imageAspect": "square",
+              "imageURL": "https:\/\/raw.githubusercontent.com\/dvoin3scu\/stremio-starter-kit\/refs\/heads\/main\/resources\/streaming\/primevideo-square.jpg",
+              "title": "Prime Video"
+            }
+          ]
+        }
+      },
+      "id": "collection.DF6EB88E-8FE6-4A64-89B0-93AB08310BEC",
+      "title": "Streaming Platforms",
+      "type": "collection.row"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8\/manifest.json",
+          "catalogId": "movie::trakt.list.10851163",
+          "type": "movie"
+        }
+      },
+      "id": "catalog.581CF3F3-26DC-4DCC-B8FD-5410FFC4727C",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Spotlight: Criterion Collection",
+      "type": "hero.banner"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8\/manifest.json",
+          "catalogId": "movie::mdblist.158",
+          "type": "movie"
+        }
+      },
+      "id": "catalog.793E3D80-058D-47CA-BB9E-AD45D4E253C7",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Spotlight: IMDb Moviemeter",
+      "type": "hero.banner"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8\/manifest.json",
+          "catalogId": "movie::trakt.list.22905310",
+          "type": "movie"
+        }
+      },
+      "id": "catalog.6AE71228-03E8-4F9C-BD54-DB76BA46CDEE",
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Spotlight: Letterboxd Top",
+      "type": "hero.banner"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8\/manifest.json",
+          "catalogId": "all::trakt.list.19748603",
+          "type": "series"
+        }
+      },
+      "id": "catalog.308CDBC4-33EB-4379-93C2-1C21A2284995",
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Spotlight: Certified Fresh",
+      "type": "hero.banner"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8\/manifest.json",
+          "catalogId": "movie::trakt.list.33630344",
+          "type": "movie"
+        }
+      },
+      "id": "catalog.3EDF8151-2A89-4AF9-9687-6A47EEE065FC",
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Spotlight: Oscars 2026",
+      "type": "hero.banner"
+    },
+    {
+      "cacheTTL": 1800,
+      "dataSource": {
+        "kind": "addonCatalog",
+        "payload": {
+          "addonId": "https:\/\/meta.asgardr.sbs\/stremio\/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8\/manifest.json",
+          "catalogId": "anime::anilist.discover.anime.spotlight_anime_spring_2026.mnvn9t4q",
+          "type": "series"
+        }
+      },
+      "id": "catalog.F7400041-2210-4863-81CE-BC1C2A7F7292",
+      "limit": 20,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Spotlight: Spring 2026 Anime",
+      "type": "hero.banner"
+    },
+    {
+      "id": "collection.D9B8E2CA-88B3-453D-93F6-DA609590F58B",
+      "title": "Anime Powerhouses!",
+      "hideTitle": false,
+      "type": "collection.row",
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "id": "537094af-5080-4c92-aa79-6fe671ad6496",
+              "title": "Bones Inc.",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.103388",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/anime/bones-square.jpg"
+            },
+            {
+              "id": "1ba1d80b-b3cd-4a80-9d2d-7c5c0c74c335",
+              "title": "Kyoto Animation",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.103383",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/anime/kyoto-animation-square.jpg"
+            },
+            {
+              "id": "99468c5d-c236-4583-8d16-1c60c35ad49b",
+              "title": "Madhouse",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.103385",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/anime/madhouse-square.jpg"
+            },
+            {
+              "id": "3d0159ab-ceb0-4574-ac67-316a7ffcd99e",
+              "title": "MAPPA",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.103386",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/anime/mappa-square.jpg"
+            },
+            {
+              "id": "2e717dc2-e1dd-4fdd-8c77-32ff462e464d",
+              "title": "Pierrot Animation",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.103384",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/anime/pierrot-animation-square.jpg"
+            },
+            {
+              "id": "53eca073-c176-4e27-91db-860575f1027a",
+              "title": "Production I.G",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.103387",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/anime/productionig-square.jpg"
+            },
+            {
+              "id": "00c2d34f-e06d-45fb-821c-2803792a9c60",
+              "title": "Studio Ghibli",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.29927",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/anime/studio-ghibli-square.jpg"
+            },
+            {
+              "id": "6c23bf78-d728-4ca8-9e98-5d59f39b0e30",
+              "title": "Toei Animation",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.103381",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/anime/toei-animation-square.jpg"
+            },
+            {
+              "id": "b439bd24-9a6a-424f-b116-d225197d5e9d",
+              "title": "Trigger",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.105606",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/anime/studio-trigger-square.jpg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "collection.B31840FE-FC67-433B-A43D-BA2D72422BC8",
+      "title": "Awards",
+      "hideTitle": false,
+      "type": "collection.row",
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "id": "b0e2698d-66c3-48a0-aa25-e66e2e2cd1bb",
+              "title": "Bafta: Best Film",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "all::trakt.list.32197483",
+                    "type": "all"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/award/bafta-poster.png"
+            },
+            {
+              "id": "5c26a689-fb20-4061-979e-58b889227703",
+              "title": "Cannes Film Festival: Palme d'Or",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "all::trakt.list.32197493",
+                    "type": "all"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/award/iff-poster.png"
+            },
+            {
+              "id": "5bf442c5-b6d5-49e2-9458-465e1e8c25d2",
+              "title": "Film Independent Spirit Awards: Best Feature",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "all::trakt.list.32197432",
+                    "type": "all"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/award/fisa-poster.png"
+            },
+            {
+              "id": "9596e4d9-79c2-42e3-b7ee-b360b35e4d20",
+              "title": "Golden Globes: Best Motion Picture",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "all::trakt.list.32197488",
+                    "type": "all"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/award/globes-poster.png"
+            },
+            {
+              "id": "5b77899b-f91b-44e6-a860-46639ac36dfe",
+              "title": "Oscars: Best Picture",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "all::trakt.list.32197497",
+                    "type": "all"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/award/oscars-poster.png"
+            },
+            {
+              "id": "894db975-bd85-4706-8994-536092ba110e",
+              "title": "Venice Film Festival",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "all::trakt.list.32197492",
+                    "type": "all"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/award/viff-poster.png"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "collection.69B1D658-E8C7-4432-9BFE-274D26C25766",
+      "title": "Directors",
+      "hideTitle": false,
+      "type": "collection.row",
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "id": "896c5ddf-5785-4245-8c10-7cd43bc1e38e",
+              "title": "Alfred Hitchcock",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.105481",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/alfred-hitchcock-poster.jpg"
+            },
+            {
+              "id": "915d90c0-38a1-4c30-a655-69e4a7bbf146",
+              "title": "Brian de Palma",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.75992",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/brian-palma-poster.jpg"
+            },
+            {
+              "id": "6e2febf1-141e-4679-b777-698a30cf72cb",
+              "title": "Christopher Nolan",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.33385",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/christopher-nolan-poster.jpg"
+            },
+            {
+              "id": "ed5b8034-4cce-41bb-9452-485e3bdee0db",
+              "title": "David Fincher",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.75974",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/david-fincher-poster.jpg"
+            },
+            {
+              "id": "55a8fa31-defc-41d6-b31d-ef6189698565",
+              "title": "David Lynch",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.75990",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/david-lynch-poster.jpg"
+            },
+            {
+              "id": "bfd52cd1-3213-46d9-97f4-a47c56c3ab34",
+              "title": "Denis Villeneuve",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.33240",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/denis-villeneuve-poster.jpg"
+            },
+            {
+              "id": "3d37ad2c-2e74-419b-8935-fe9e63f256ed",
+              "title": "Francis Ford Coppola",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.32866",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/francis-coppola-poster.jpg"
+            },
+            {
+              "id": "52eedf8c-ac3d-4f10-acb4-ce52f8d34b73",
+              "title": "Guillermo del Toro",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.32864",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/guillermo-toro-poster.jpg"
+            },
+            {
+              "id": "1ef5ebdb-0e2f-4d99-8dc7-7aea146308b1",
+              "title": "James Cameron",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.91026",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/james-cameron-poster.jpg"
+            },
+            {
+              "id": "06081d77-449c-4fbb-af1d-2b8e33546da0",
+              "title": "John Carpenter",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.91035",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/john-carpenter-poster.jpg"
+            },
+            {
+              "id": "1d316b62-653d-4488-a749-c2457a2eff29",
+              "title": "Martin Scorsese",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.32865",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/martin-scorsese-poster.jpg"
+            },
+            {
+              "id": "8456078e-d248-4f4f-b78e-fee13a3f8769",
+              "title": "Paul Thomas Anderson",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.33033",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/pt-anderson-poster.jpg"
+            },
+            {
+              "id": "be2c63c9-a177-4277-9327-85617c770009",
+              "title": "Quentin Tarantino",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.33036",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/quentin-tarantino-poster.jpg"
+            },
+            {
+              "id": "efdf094b-32cc-4ee5-aa5d-89172a29c8a4",
+              "title": "Ridley Scott",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.32868",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/ridley-scott-poster.jpg"
+            },
+            {
+              "id": "7064ca05-371f-4add-9f1a-f77521c77c60",
+              "title": "Stanley Kubrick",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.91028",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/stanley-kubrick-poster.jpg"
+            },
+            {
+              "id": "a25afa1f-fb22-4cc7-bfc4-17b7a521f26c",
+              "title": "Steven Spielberg",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.75978",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/steven-spielberg-poster.jpg"
+            },
+            {
+              "id": "f2d90cd3-4cbd-46fd-ba35-049c41e43811",
+              "title": "Wes Anderson",
+              "hideTitle": false,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.75968",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/director/wes-anderson-poster.jpg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "collection.E83375F4-C472-4EE9-A2A1-7F651C0B2D17",
+      "title": "Eras",
+      "hideTitle": false,
+      "type": "collection.row",
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "id": "1d6be838-c0b9-4fbf-ac7a-08b51da33a8a",
+              "title": "Decades: Now",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::tmdb.year_movie",
+                    "type": "movie"
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::tmdb.year_series",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/decade/decadesnow-square.jpg"
+            },
+            {
+              "id": "63d899fc-a1f6-4031-adc2-209fd5aa4ef7",
+              "title": "Decades: 2020s",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.91304",
+                    "type": "movie"
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.41413",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/decade/decades2020s-square.jpg"
+            },
+            {
+              "id": "6e3ac02c-7f64-4c52-9d49-18a5e7249fa3",
+              "title": "Decades: 2010s",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.91303",
+                    "type": "movie"
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.41412",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/decade/decades2010s-square.jpg"
+            },
+            {
+              "id": "d783a3a4-7777-43d4-b29b-fd2e97f2cf88",
+              "title": "Decades: 2000s",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.91302",
+                    "type": "movie"
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.41411",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/decade/decades2000s-square.jpg"
+            },
+            {
+              "id": "f1d440af-da6d-448e-9d9d-cd3fd712c594",
+              "title": "Decades: 1990s",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.91300",
+                    "type": "movie"
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.41410",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/decade/decades1990s-square.jpg"
+            },
+            {
+              "id": "be716cdb-6602-478b-b44d-efb7cf8e62bb",
+              "title": "Decades: 1980s",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.91301",
+                    "type": "movie"
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.41409",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/decade/decades1980s-square.jpg"
+            },
+            {
+              "id": "ad2cad17-0736-4095-b0ed-d7cc5bfd2654",
+              "title": "Decades: 1970s",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.127962",
+                    "type": "movie"
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.41408",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/decade/decades1970s-square.jpg"
+            },
+            {
+              "id": "45654a06-c900-48e9-b695-93e62a5ef550",
+              "title": "Decades: 1960s",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.144321",
+                    "type": "movie"
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.41407",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/decade/decades1960s-square.jpg"
+            },
+            {
+              "id": "70c62cce-62eb-4c0e-8496-392ce6c5526c",
+              "title": "Decades: 1950s and earlier",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.105249",
+                    "type": "movie"
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.105250",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/decade/decades1950s-square.jpg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "collection.9728B9A3-F2EF-4BC6-BF8E-A12B7639A6C1",
+      "title": "Massive Universes",
+      "hideTitle": false,
+      "type": "collection.row",
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "id": "edbc4fee-75bc-45fb-9a68-1406fffc28ff",
+              "title": "DC Universe: Chronological Order",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "dc::custom.com_tapframe_dcaddon_custom_dc_chronological_dc_release_dceu_movies_dc_modern_series.DC.dc_chronological",
+                    "type": "dc"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/universe/dc1-wide.jpg"
+            },
+            {
+              "id": "002d6140-4637-45e6-a94e-fc6fa904fc5b",
+              "title": "DC Universe: Modern Series",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "dc::custom.com_tapframe_dcaddon_custom_dc_chronological_dc_release_dceu_movies_dc_modern_series.DC.dc_modern_series",
+                    "type": "dc"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/universe/dc2-wide.jpg"
+            },
+            {
+              "id": "845819bf-257e-42e1-91bf-51dfff118945",
+              "title": "Marvel Universe: Chronological Order",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "marvel::custom.com_joaogonp_marveladdon_custom_marvel_mcu_series_xmen.Marvel.marvel_mcu",
+                    "type": "marvel"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/universe/marvel1-wide.jpg"
+            },
+            {
+              "id": "b2b6ed31-3ebf-47d9-aeb8-fed2d8674ea6",
+              "title": "Marvel Universe: Modern Series",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "marvel::custom.com_joaogonp_marveladdon_custom_marvel_mcu_series_xmen.Marvel.series",
+                    "type": "marvel"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/universe/marvel2-wide.jpg"
+            },
+            {
+              "id": "2eb07882-2d72-487d-8a69-f22b06971a16",
+              "title": "Star Wars: Chronological Order",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "starwars::custom.com_starwars_addon_custom_sw_movies_series_chronological_sw_skywalker_saga.StarWars.sw_movies_series_chronological",
+                    "type": "starwars"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/universe/starwars1-wide.jpg"
+            },
+            {
+              "id": "8bebdd32-fa1b-4c8d-947c-7d07c09e4b49",
+              "title": "Star Wars: Skywalker Saga",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "starwars::custom.com_starwars_addon_custom_sw_movies_series_chronological_sw_skywalker_saga.StarWars.sw_skywalker_saga",
+                    "type": "starwars"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/universe/starwars2-wide.jpg"
+            },
+            {
+              "id": "3b876b6d-3300-4c7e-8cd0-3ea46cc77ac4",
+              "title": "Wizarding World",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.12731",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/universe/wizarding-wide.jpg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "collection.07EF769F-9C81-4A55-A7AA-673973BBF3E0",
+      "title": "Popular Collections",
+      "hideTitle": false,
+      "type": "collection.row",
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "id": "5c73d7ce-42dc-4b5e-bdd0-1eda4ceb8bdc",
+              "title": "Collection: Alien",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.146022",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/alien-poster.png"
+            },
+            {
+              "id": "ba00b759-1dda-4ac5-a505-b77de9369b34",
+              "title": "Collection: Back to the Future",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.102986",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/back-future-poster.png"
+            },
+            {
+              "id": "d66dcc69-05a1-4a5c-86f1-411f429977a7",
+              "title": "Collection: Blade Runner",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "all::trakt.list.4293668",
+                    "type": "all"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/blade-runner-poster.png"
+            },
+            {
+              "id": "787c8bf8-ae52-4a61-adec-79311505e26d",
+              "title": "Collection: Dark Knight",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.59616",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/dark-knight-poster.png"
+            },
+            {
+              "id": "47d58ca9-8f08-4d1b-a895-0739a1a996b6",
+              "title": "Collection: The Godfather",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.143865",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/godfather-poster.png"
+            },
+            {
+              "id": "9065f404-7ff0-4e33-845b-385df5ff53cd",
+              "title": "Collection: Indiana Jones",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.102980",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/indiana-jones-poster.png"
+            },
+            {
+              "id": "ef075aa6-b697-4074-a9b1-73e407a87fb8",
+              "title": "Collection: James Bond",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.102977",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/james-bond-poster.png"
+            },
+            {
+              "id": "920c99f6-c150-4292-8763-d17d811152a0",
+              "title": "Collection: John Wick",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.143882",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/john-wick-poster.png"
+            },
+            {
+              "id": "96e1aeef-2477-45d1-9f31-17d13a1ca915",
+              "title": "Collection: Jurassic Park",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.102982",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/jurassic-park-poster.png"
+            },
+            {
+              "id": "2e8983e0-d408-4988-a3f9-7a904a51fbae",
+              "title": "Collection: Man with No Name",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.43235",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/man-no-name-poster.png"
+            },
+            {
+              "id": "089ec2bb-88dd-458f-9050-04c5ee331535",
+              "title": "Collection: The Matrix",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.102981",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/matrix-poster.png"
+            },
+            {
+              "id": "cc425430-9dea-4879-b437-14bf261d1d9e",
+              "title": "Collection: Middle-Earth",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::trakt.list.11665173",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/middle-earth-poster.png"
+            },
+            {
+              "id": "549466ac-b50d-49eb-a524-5cfc7fcc0f28",
+              "title": "Collection: Mission Impossible",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.102985",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/mission-impossible-poster.png"
+            },
+            {
+              "id": "5435bd0c-ee42-49bd-92cc-8b3cf6903801",
+              "title": "Collection: Monty Python",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "all::trakt.list.22236190",
+                    "type": "all"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/monty-python-poster.png"
+            },
+            {
+              "id": "884923e1-63cb-43f6-bf96-3e24e2182296",
+              "title": "Collection: Naked Gun",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.119164",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/naked-gun-poster.png"
+            },
+            {
+              "id": "c7812efa-e474-49b3-a72f-3a5836568cfa",
+              "title": "Collection: Pirates of the Caribbean",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.102979",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/pirates-caribbean-poster.png"
+            },
+            {
+              "id": "c1b2f795-1c2b-4f0a-a8bf-58381fac3bb0",
+              "title": "Collections: Rambo",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.31324",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/rambo-poster.png"
+            },
+            {
+              "id": "b4d9bd92-5c34-46bb-a4aa-85db860e61ce",
+              "title": "Collections: Rocky",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::trakt.list.11665166",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/rocky-poster.png"
+            },
+            {
+              "id": "13879426-3fd9-4ee0-9e33-3d7326bf4247",
+              "title": "Collections: Terminator",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.102987",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/terminator-poster.png"
+            },
+            {
+              "id": "23f495f5-21e8-44fc-a72d-7f3d6f81eb7e",
+              "title": "Collection: Three Falvours Cornetto Trilogy",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.105270",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/cornetto-trilogy-poster.png"
+            },
+            {
+              "id": "5dae2f9d-bb64-41af-8114-0b862a60913c",
+              "title": "Collection: Universal Classic Monsters",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::trakt.list.11664400",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/universal-monsters-poster.png"
+            },
+            {
+              "id": "83299479-24b9-45c6-ac8b-d8ea2109a479",
+              "title": "Collection: X-Men",
+              "hideTitle": true,
+              "imageAspect": "poster",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "marvel::custom.com_joaogonp_marveladdon_custom_marvel_mcu_series_xmen.Marvel.xmen",
+                    "type": "marvel"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/collection/xmen-poster.png"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "collection.3D49097C-9A1D-46DD-8151-A3D2AB97DB29",
+      "title": "Studios & Networks",
+      "hideTitle": false,
+      "type": "collection.row",
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "id": "80112a97-7b8a-495d-8f07-f271892152ae",
+              "title": "A24 Productions",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.64770",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/a24-square.png"
+            },
+            {
+              "id": "d6a559cf-4841-4c9c-b1ae-669e5bba1b73",
+              "title": "Adult Swim",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.83091",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/adultswim-square.png"
+            },
+            {
+              "id": "8051cd72-eb0d-497f-9dfd-c51c197c0d13",
+              "title": "Annapurna Pictures",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.93255",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/annapurna-square.png"
+            },
+            {
+              "id": "89ac1e19-cc0c-4877-97bb-73f8bfd965ab",
+              "title": "Blumhouse",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.96197",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/blumhouse-square.png"
+            },
+            {
+              "id": "75285b55-118c-4852-bd15-b0f3ba9a219d",
+              "title": "Cartoon Network",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.120674",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/cartoon-square.png"
+            },
+            {
+              "id": "989d191c-39f7-4e48-8c9a-d15048a63500",
+              "title": "DreamWorks",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.3928",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/dreamworks-square.png"
+            },
+            {
+              "id": "270cb12b-c406-4af4-a00e-5a0146d8bc42",
+              "title": "Hanna-Barbera Cartoons",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "series::mdblist.83705",
+                    "type": "series"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/hannabarbera-square.png"
+            },
+            {
+              "id": "576e6bec-9512-45cc-bfc9-6c12be106c9a",
+              "title": "NEON Films",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.89518",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/neon-square.png"
+            },
+            {
+              "id": "e7af861a-507d-459e-9fd3-8690d7378177",
+              "title": "Pixar",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.3918",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/pixar-square.png"
+            },
+            {
+              "id": "3a7721ea-1ef1-4023-a876-b8fa651750b2",
+              "title": "Searchlight Pictures",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.30815",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/searchlight-square.png"
+            },
+            {
+              "id": "61330cf3-872e-44b7-97be-ca4503283db4",
+              "title": "Walt Disney Animation",
+              "hideTitle": true,
+              "imageAspect": "square",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://meta.asgardr.sbs/stremio/0d80e3ad-4a2a-4d31-9e30-b6bdb17c06a8/manifest.json",
+                    "catalogId": "movie::mdblist.31335",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/dvoin3scu/stremio-starter-kit/refs/heads/main/resources/studio/waltdisney-square.png"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
